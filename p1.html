@@ -34,12 +34,107 @@
         <h3>Design Summary</h3>
         <p>
             For our Praxis Showcase, we worked on engineering a gate that could fit the needs of our stakeholder,
-            Friend's Daycare. This process went through numerous iterations.
+            Friend's Daycare. This process went through numerous iterations as seen in Figure 1.
         </p>
+        <figure>
+            <img src="assets/fdcr.webp" alt="Figure 1">
+            <figcaption>Figure 1: A flowchart of our FDCR process. It should be noted that this is heavily simplified:
+                other representing stages such as prototyping were ommitted, as well as further framing following our
+                community meeting.</figcaption>
+        </figure>
         <p>
             hi. This was our poster man :(
         </p>
         <img src="assets/poster.webp">
+
+        <h3>CTMF 1: Diverging with Morph Charts</h3>
+        <p>
+            After rescoping our opportunity and refining our NGOs, we wanted to diverge and cover to scope our solution
+            space. For this, we used a Morph chart. Our design fundamentally lended itself to modularity. We split our
+            design into subsystems (auto-closing, locking, alert, closed-state indication), making diverging with the
+            morph chart a great fit.
+        </p>
+        <figure>
+            <img src="assets/morph.webp" alt="Figure 2">
+            <figcaption>Figure 2: A digital recreation of our Morph chart. The four modular aspects we came up with are
+                shown in the first column.</figcaption>
+        </figure>
+
+        <p>
+            Prior to showcase, my team reflected on our usages of different diverging elements. To us, the morph chart
+            was particularly interesting:
+            <li>It allowed us to diverge very fast simply through combinatorics.</li>
+            <li>It cognitively anchored us to the 4 parts we chose for the rest of our process.</li>
+            <li>The concepts it produced often had flaws which had to be addressed through further converging and
+                diverging.</li>
+
+        </p>
+        <p>
+            By treating each subsystem independently, the morph chart prevented us from anchoring too early on
+            one holistic concept. The resulting combinations seeded our four Beta Designs: <em>Electric
+                Boogaloo</em>, <em>Springs Ahoy</em>, <em>Rube-Goldberg</em>, and <em>Torque Handle</em>.
+        </p>
+
+        <h3>CTMF 2: Diverging with Biomimicry</h3>
+        <p>
+            To further expand our solution space beyond conventional engineering references, we applied
+            <b>Biomimicry</b> — drawing inspiration from strategies found in nature to address our design
+            challenges.
+        </p>
+        <p>
+            A key challenge was producing a reliable, passive audible alert without electrical power. We looked
+            to crickets, which generate sound through <em>stridulation</em>: rubbing textured surfaces together
+            to produce a consistent tonal frequency. This directly inspired the "cricket pad" friction design
+            used in <em>Springs Ahoy</em> and later carried into our final Knob Cover prototype, where ribbed
+            pads on the door make contact with the frame during closing to produce a ~500 Hz tone — squarely
+            within our target frequency range of 400–600 Hz — without any electronics.
+        </p>
+        <p>
+            Biomimicry also informed our thinking about self-closing mechanisms. The way a cat-flap or a
+            weighted animal burrow entrance passively returns to a resting closed state under gravity paralleled
+            our angled-hinge and hanging-mass concepts, reinforcing that a purely gravitational restoring force
+            is a viable, low-maintenance solution.
+        </p>
+
+        <h3>CTMF 3: Converging with Pairwise Comparison</h3>
+        <p>
+            With several competing requirements and no single design excelling across all of them, we needed a
+            principled way to establish which requirements mattered most before making final design trade-offs.
+            We used a <b>Pairwise Comparison</b> to rank our five shortlisted requirements head-to-head:
+        </p>
+        <ul>
+            <li><b>R3</b> — Gate closes safely (≤ 1.69 J, ≥ 5 s)</li>
+            <li><b>R5</b> — Correctly indicates gate locking state</li>
+            <li><b>R6</b> — Visual indicator perceivable from 10 m outdoors</li>
+            <li><b>R7</b> — Audible alert when gate opens</li>
+            <li><b>R12</b> — Lock withstands 500 N of applied force</li>
+        </ul>
+        <p>
+            Each requirement was compared against every other, and the one judged more critical received the
+            point. The final priority order was: <strong>R12 &gt; R7 &gt; R5 &gt; R6 &gt; R3</strong>.
+            Structural lock integrity ranked highest because a lock that fails under force directly endangers
+            children regardless of how good the indicators are. The audible alert ranked second as the primary
+            real-time notification mechanism for staff. Correct state indication and long-distance visibility
+            followed, while closing energy — though important — ranked last as it is bounded by an existing
+            standard and partially addressed by passive friction damping.
+        </p>
+        <p>
+            This ranked priority order then directly fed into our Pugh Charts and Measurement Matrix, ensuring
+            that when designs were evaluated against our evaluation criteria, the criteria were weighted in a
+            way that reflected stakeholder needs rather than arbitrary preference. It also informed the
+            SCAMPER re-divergence step: knowing R7 and R12 were top priorities, we focused SCAMPER
+            substitutions and modifications on reinforcing the audible alert and locking reliability of the
+            leading candidate, <em>Electric Boogaloo</em>.
+        </p>
+
+        <h3>References</h3>
+        <p>
+            [1] Lofgreen, J., & Carrick, R. (2026). ESC102 Lecture Slides.
+        </p>
+
+
+        <img src="assets/cat.webp" alt="cat" class="no-border">
+
     </main>
 
 

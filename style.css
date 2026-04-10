@@ -91,17 +91,23 @@ main figcaption {
 }
 
 main figure {
-    max-width: 500px;
-    border: 2px solid #42ad47;
-    background-color: #e4f3e5;
-    padding: 10px 20px 10px 10px;
+    max-width: 600px;
+    /*border: 2px solid #42ad47;
+    background-color: #e4f3e5;*/
+    padding: 10px 40px 10px 40px;
 }
 
 main img {
     border: 1px solid #000;
-    box-shadow: 5px 5px 0px 2px #00000020;
     margin: 5px;
     width: 100%;
+}
+
+.no-border {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
 }
 
 main p {
