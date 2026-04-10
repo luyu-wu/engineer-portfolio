@@ -7,7 +7,7 @@
 
 body {
     font-family: Sans-Serif;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #404040;
 }
 
@@ -25,6 +25,14 @@ header {
 #icon {
     margin-left: 12px;
     margin-right: 12px;
+}
+
+#active-tab {
+    background: #1071db30;
+}
+
+#active-tab:hover {
+    background: #1071db;
 }
 
 nav ul {
@@ -63,10 +71,14 @@ main h2 {
     color: #888;
     font-size: 16px;
     font-weight: 200;
-    margin-left: 2em;
     margin-top: -12px;
     margin-bottom: 20px;
 }
+
+main h3 {
+    margin-top: 12px;
+}
+
 
 main h4 {
     margin-top: 12px;
@@ -105,11 +117,7 @@ main .list-links {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    background-color: #f7ceca;
-    border: 2px solid #e13b2d;
+    background-color: #dceaf4;
+    border: 2px solid #448fc6;
     padding: 2px 6px 2px 6px;
-}
-
-main .list-links:hover {
-    background-color: #d7aeaa;
 }
