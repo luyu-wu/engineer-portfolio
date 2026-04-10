@@ -56,7 +56,7 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -88,6 +88,15 @@ main figcaption {
     color: #555;
     font-size: 12px;
     max-width: 100%;
+}
+
+one-pager {
+    display: block;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
 }
 
 main figure {

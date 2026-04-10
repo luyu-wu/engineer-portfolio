@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Portfolio</title>
+    <title>Praxis Showcase - Luyu</title>
     <link rel="icon" href="favicon.webp">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,32 +30,32 @@
         <h2>"The door opens!"</h2>
         <b class="list-links"> Team Credits: Emma Choi, Ammar Hasham, Luna Song
         </b>
-
-        <h3>Design Summary</h3>
-        <p>
-            For our Praxis Showcase, we worked on engineering a gate that could fit the needs of our stakeholder,
-            Friend's Daycare. This process went through numerous iterations as seen in Figure 1.
-        </p>
-        <figure>
-            <img src="assets/fdcr.webp" alt="Figure 1">
-            <figcaption>Figure 1: A flowchart of our FDCR process. It should be noted that this is heavily simplified:
-                other representing stages such as prototyping were ommitted, as well as further framing following our
-                community meeting.</figcaption>
-        </figure>
-        <p>
-            hi. This was our poster man :(
-        </p>
-        <img src="assets/poster.webp">
-
-        <h3>CTMF 1: Diverging with Morph Charts</h3>
+        <one-pager>
+            <h3>Design Summary One-Pager</h3>
+            <p>
+                For our Praxis Showcase, we worked on engineering a gate that could fit the needs of our stakeholder,
+                Friend's Daycare. This process went through numerous iterations as seen in Figure 1.
+            </p>
+            <figure>
+                <img src="assets/fdcr.webp" alt="Figure 1" class="no-border">
+                <figcaption>Figure 1: A flowchart of our FDCR process. It should be noted that this is heavily
+                    simplified:
+                    other representing stages such as prototyping were ommitted, as well as further framing following
+                    our
+                    community meeting.</figcaption>
+            </figure>
+            <img src="assets/poster.webp">
+        </one-pager>
+        <h3>CTMF 1: Diverging with Morph Charts, facing Cognitive Anchors</h3>
         <p>
             After rescoping our opportunity and refining our NGOs, we wanted to diverge and cover to scope our solution
             space. For this, we used a Morph chart. Our design fundamentally lended itself to modularity. We split our
-            design into subsystems (auto-closing, locking, alert, closed-state indication), making diverging with the
-            morph chart a great fit.
+            design into subsystems (auto-closing, locking, alert, and closed-state indication), making diverging with
+            the
+            morph chart a great match. A visualization of our morph chart is shown below.
         </p>
         <figure>
-            <img src="assets/morph.webp" alt="Figure 2">
+            <img src="assets/morph.webp" alt="Figure 2" class="no-border">
             <figcaption>Figure 2: A digital recreation of our Morph chart. The four modular aspects we came up with are
                 shown in the first column.</figcaption>
         </figure>
@@ -64,15 +64,18 @@
             Prior to showcase, my team reflected on our usages of different diverging elements. To us, the morph chart
             was particularly interesting:
             <li>It allowed us to diverge very fast simply through combinatorics.</li>
-            <li>It cognitively anchored us to the 4 parts we chose for the rest of our process.</li>
-            <li>The concepts it produced often had flaws which had to be addressed through further converging and
-                diverging.</li>
-
+            <li>It cognitively anchored us to the 4 types of components we chose for the rest of our process.</li>
+            <li>The concepts were aided by SCAMPER a lot later on.</li>
         </p>
+
+        <h4>Takeaways</h4>
         <p>
-            By treating each subsystem independently, the morph chart prevented us from anchoring too early on
-            one holistic concept. The resulting combinations seeded our four Beta Designs: <em>Electric
-                Boogaloo</em>, <em>Springs Ahoy</em>, <em>Rube-Goldberg</em>, and <em>Torque Handle</em>.
+            While the morph chart provided a fast way to generate concepts, it also left us anchored to a
+            a single way of thinking. For example, later on when we questioned the need for some of these systems (such
+            as the audio system) or considered adding a new component (a device for supervisors), this did not fit
+            cleanly into our existing concepts which caused a lot of friction. While the morph chart was great for
+            diverging far faster than what may be possible with other tools, it also is important in the future for me
+            to stay wary of cognitive anchors.
         </p>
 
         <h3>CTMF 2: Diverging with Biomimicry</h3>
@@ -88,12 +91,6 @@
             used in <em>Springs Ahoy</em> and later carried into our final Knob Cover prototype, where ribbed
             pads on the door make contact with the frame during closing to produce a ~500 Hz tone — squarely
             within our target frequency range of 400–600 Hz — without any electronics.
-        </p>
-        <p>
-            Biomimicry also informed our thinking about self-closing mechanisms. The way a cat-flap or a
-            weighted animal burrow entrance passively returns to a resting closed state under gravity paralleled
-            our angled-hinge and hanging-mass concepts, reinforcing that a purely gravitational restoring force
-            is a viable, low-maintenance solution.
         </p>
 
         <h3>CTMF 3: Converging with Pairwise Comparison</h3>
