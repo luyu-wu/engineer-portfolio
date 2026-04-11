@@ -34,7 +34,14 @@
             <h3>Design Summary One-Pager</h3>
             <p>
                 For our Praxis Showcase, we worked on engineering a gate that could fit the needs of our stakeholder,
-                Friend's Daycare. This process went through numerous iterations as seen in Figure 1.
+                Friend's Daycare. An overview of our design which we presented at showcase can be seen in the poster
+                below:
+            </p>
+            <img src="assets/poster.webp">
+            <p>
+                This project was an excellent representation of engineering design process, and we covered all threads
+                of framing, diverging, converging, and representing (FDCR) multiple times.
+                This process went through numerous iterations as seen in Figure 1.
             </p>
             <figure>
                 <img src="assets/fdcr.webp" alt="Figure 1" class="no-border">
@@ -44,9 +51,17 @@
                     our
                     community meeting.</figcaption>
             </figure>
-            <img src="assets/poster.webp">
+
+            Following the FDCR process, we also built a 3:1 scale physical prototype which we used to represent and
+            verify our design. A picture of that can be seen below:
+            <img src="assets/prototype.webp">
+
         </one-pager>
-        <h3>CTMF 1: Diverging with Morph Charts, facing Cognitive Anchors</h3>
+        <h3>CTMF 1: Diverging with Morph Charts, Risks of Cognitive Anchors</h3>
+        <p>
+            The Morph chart is a diverging method, performed by separating the design into several smaller components
+            and proposing design solutions for each component, then combining them to produce full design concepts. [1]
+        </p>
         <p>
             After rescoping our opportunity and refining our NGOs, we wanted to diverge and cover to scope our solution
             space. For this, we used a Morph chart. Our design fundamentally lended itself to modularity. We split our
@@ -80,48 +95,82 @@
 
         <h3>CTMF 2: Diverging with Biomimicry</h3>
         <p>
-            To further expand our solution space beyond conventional engineering references, we applied
-            <b>Biomimicry</b> — drawing inspiration from strategies found in nature to address our design
-            challenges.
+            As part of filling out our morph chart, we applied
+            Biomimicry, taking inspiration from nature for our design. We found biomimicry to be helpful in finding new
+            ways to approach design problems. For instance, we were interested in a solution that could hold the door
+            shut.
         </p>
+        <p>
+            While it was a bit awkward at first, when we switched to a more structured approach ideas started coming
+            faster. By taking suggestions of a random animals from one team member at a time, then discussing
+            which parts may be useful, this gave our discussion structure and gave fruitful results. The results can be
+            seen below.
+        </p>
+        <figure>
+            <img src="assets/bio.webp" alt="Figure 2" class="no-border">
+            <figcaption>Figure 3: A digital recreation of our Biomimicry chart. This digital recreation was drawn by
+                Ammar Hasham, although the original sheet was created by our group.</figcaption>
+        </figure>
         <p>
             A key challenge was producing a reliable, passive audible alert without electrical power. We looked
             to crickets, which generate sound through <em>stridulation</em>: rubbing textured surfaces together
             to produce a consistent tonal frequency. This directly inspired the "cricket pad" friction design
-            used in <em>Springs Ahoy</em> and later carried into our final Knob Cover prototype, where ribbed
-            pads on the door make contact with the frame during closing to produce a ~500 Hz tone — squarely
-            within our target frequency range of 400–600 Hz — without any electronics.
+            you can see in our poster. The torque arm idea inspired by rabbits was also helpful in modulating the force
+            applied to the door to keep it within safe limits for children.
+        </p>
+        <h4>Takeaways</h4>
+
+        <p>
+            In summary, biomimicry can be quite a useful tool but also intimidating. Intimidating because there is so
+            much you can think about in natures, but useful because the ideas are typically not something you'd usually
+            think of, yet also effective!
         </p>
 
-        <h3>CTMF 3: Converging with Pairwise Comparison</h3>
+        <h3>CTMF 3: Converging with Pugh Charts, synergizing with SCAMPER</h3>
         <p>
-            With several competing requirements and no single design excelling across all of them, we needed a
-            principled way to establish which requirements mattered most before making final design trade-offs.
-            We used a <b>Pairwise Comparison</b> to rank our five shortlisted requirements head-to-head:
-        </p>
-        <ul>
-            <li><b>R3</b> — Gate closes safely (≤ 1.69 J, ≥ 5 s)</li>
-            <li><b>R5</b> — Correctly indicates gate locking state</li>
-            <li><b>R6</b> — Visual indicator perceivable from 10 m outdoors</li>
-            <li><b>R7</b> — Audible alert when gate opens</li>
-            <li><b>R12</b> — Lock withstands 500 N of applied force</li>
-        </ul>
-        <p>
-            Each requirement was compared against every other, and the one judged more critical received the
-            point. The final priority order was: <strong>R12 &gt; R7 &gt; R5 &gt; R6 &gt; R3</strong>.
-            Structural lock integrity ranked highest because a lock that fails under force directly endangers
-            children regardless of how good the indicators are. The audible alert ranked second as the primary
-            real-time notification mechanism for staff. Correct state indication and long-distance visibility
-            followed, while closing energy — though important — ranked last as it is bounded by an existing
-            standard and partially addressed by passive friction damping.
+            The Pugh chart is converging method formed by comparing designs to one ground design at a time across a
+            variety of contexts (for instance, evaluation criterion). [1]
         </p>
         <p>
-            This ranked priority order then directly fed into our Pugh Charts and Measurement Matrix, ensuring
-            that when designs were evaluated against our evaluation criteria, the criteria were weighted in a
-            way that reflected stakeholder needs rather than arbitrary preference. It also informed the
-            SCAMPER re-divergence step: knowing R7 and R12 were top priorities, we focused SCAMPER
-            substitutions and modifications on reinforcing the audible alert and locking reliability of the
-            leading candidate, <em>Electric Boogaloo</em>.
+            Following diverging with the morph chart and biomimicry stages, our team required a way to converge through
+            evidence-based reasoning. As we had already established our evaluation criteria during framing, we used them
+            to perform a qualitative analysis on the relative effectiveness of each design. While at the time we did not
+            have physical prototypes, the Pugh chart was relatively forgiving with this, and napkin math was sufficient
+            for its boolean (worse, equal, better) results.
+        </p>
+        <figure>
+            <img src="assets/pugh.webp" alt="Figure 2" class="no-border">
+            <figcaption>Figure 4: Our Pugh chart created following Beta release, using the "Electric Boogaloo" as the
+                ground reference. This chart was filled by Emma and Luna and me.</figcaption>
+        </figure>
+        <h4>Takeaways</h4>
+        <p>
+            The Pugh chart was helpful for us in this project for 2 reasons. Firstly, it removed 2 designs from
+            consideration (due to lacking in the places we deeemed most important using Pairwise Comparisons). Secondly,
+            it lent itself very well to diverging immediately after. Having a great idea of which category each design
+            was good in allowed us to combine designs together that worked well together.
+        </p>
+        <p>
+            This was however, in-part enabled by the modular nature of our design (which also had its downsides as
+            previously covered). However, the Pugh chart served as an excellent framework to remove designs in maybe the
+            second or third stage of converging, following converging through requirements, but before measurement
+            matrixes which we require more data.
+        </p>
+
+
+        <h3>Effect on my Position</h3>
+        <p>
+            As what I would describe as my third 'official' engineering design project, it had a large impact on how I
+            approach engineering design. Showcase was the first time that my team and I pursued all strands of FDCR in
+            large amounts and iteratively. This allowed me to appreciate the strength that CTMFs can have when used
+            together, which is reflected a lot in the reflection above (e.g. synergy between framing, converging, and
+            diverging CTMFs).
+        </p>
+        <p>
+            I feel this project, in terms of my personal intellectual development, is also what pushed me into
+            relativism. Throughout our processes, we used a large amount of evidence-based methods (see Figure 1) to
+            arrive at a final solution which was satisfactory to all members of our team. This felt noticeably different
+            from my previous projects which you will read about next.
         </p>
 
         <h3>References</h3>

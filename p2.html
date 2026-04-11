@@ -26,7 +26,7 @@
     <!-- UNIVERSAL HEADER END -->
 
     <main>
-        <h1>CIV102 Bridge</h1>
+        <h1>CIV102 Bridge Project</h1>
         <h2>Diverging, converging, representing, then collapsing!!!</h2>
 
         <b class="list-links"> Team Credits: Alan Wang, Yeonjun Kim</b>
@@ -34,28 +34,160 @@
             <h3>Design Summary One-Pager</h3>
             <p>
                 The CIV102 (Civil Engineering) Bridge Project is a design challenge where students create a bridge out
-                of
-                limited matboard and adhesive materials. The design of this bridge has to withstand as much weight as
+                of limited matboard and adhesive materials. The design of this bridge has to withstand as much weight as
                 possible (as simulated by a weighted train running over it from left to right). A PDF of our design
-                report
-                can be found <a href="assets/bridge-project.pdf">here</a>.
+                report can be found <a href="assets/bridge-project.pdf">here</a>.
             </p>
             <p>
                 Our process included 7 design iterations, as we iteratively applied diverging and converging cycles.
-                While
-                our bridge was able to pass the first load of 120N, we failed on the second load, landing us in a median
-                position.
-                The bridge project taught me valuable lessons, especially regarding the Representing portion of FDCR,
-                which
-                I will reflect upon here.
+                These were all done in simulation, as we lacked the materials to create accurate prototypes. The design
+                started with a reference design of a simple box girder bridge given by the professor. [2] From there, we
+                iteratively improved the design by adding reenforcing elements to wherever the bridge failed in
+                simulation.
             </p>
+            <figure>
+                <img src="assets/bridge_cross.webp" alt="Figure 1" class="no-border">
+                <figcaption>Figure 1: A picture of our team cutting matboard for the bridge construction.</figcaption>
+            </figure>
+            <p>
+                The construction of the bridge played
+                a large role in the performance of the bridge. An image of our team cutting matboard for the bridge
+                construction can be seen below.
+            </p>
+            <figure>
+                <img src="assets/bridge_construct.webp" alt="Figure 2" class="no-border">
+                <figcaption>Figure 2: A picture of our team cutting matboard for the bridge construction.</figcaption>
+            </figure>
+
+            <p>
+                While our bridge was able to pass the first load, we failed on the second load, landing us in a median
+                position. Thus, a lot of this reflection will reflect on what we could've <i>done better</i> if we had
+                performed a more rigorous engineering design process. A picture of our final product prior to breaking
+                can be seen below:
+            </p>
+            <figure>
+                <img src="assets/bridge_product.webp" alt="Figure 3" class="no-border">
+                <figcaption>Figure 3: A picture of our final bridge product.</figcaption>
+            </figure>
+
         </one-pager>
 
-        <h3>CTMF 1: Representing through Prototypes</h3>
+        <h3>CTMF 1: Representing using Verification Protocol</h3>
+        <p>
+            After finishing construction, we suspended the bridge over a 1-metre gap and applied some light loads
+            before the formal test. However, because we had to use our bridge in the actual testing, we couldn't apply
+            heavier loads for risk of breaking it. Two issues showed up in this testing.
+        </p>
+        <p>
+            The first was minor web buckling at the joints between web pieces — noticeable even under an estimated 20
+            kg. A single matboard sheet can't span the full 1,200 mm, so we had to piece sections together, but our
+            model just assumed one continuous piece. After the project I realized this is actually warned about in the
+            project description. [2]
+        </p>
+        <p>
+            The second was the soffit (bottom deck) lifting slightly near the
+            diaphragms, from about a 1 mm height mismatch between the diaphragm and web. Neither of these showed up
+            in our calculations and were results of poor glue application. An image with both these issues visible is
+            shown below.
+        </p>
+        <figure>
+            <img src="assets/bridge_test.webp" alt="Figure 4" class="no-border">
+            <figcaption>Figure 4: A picture of us conducting a light-load test on our bridge.</figcaption>
+        </figure>
+        <p>
+            We patched both it grafting pieces over the web joints, and adding glue tabs along the soffit. However,
+            because we couldn't apply pressure to the glue in this patch, the bridge ultimately failed in the same spots
+            we saw issues with during testing.
+        </p>
 
-        <h3>CTMF 2: Representing through Writing</h3>
+        <h4>Takeaways</h4>
+        <p>
+            What could've been helpful in this case was creating verification protocols as part of the represent
+            strand of FDCR. It should've been possible to predict that our testing wouldn't be able to adequately strain
+            our final product early on, and thus determine the need for a physical prototype to represent the design and
+            perform proxy tests on it.
+            In summary, establishing a verification protocol could've helped us better test the bridge before it was too
+            late. This experience highlighted to me how important adequate representing cycles are in design, and just
+            running simulations is not enough in many cases.
+        </p>
 
-        <h3>CTMF 3: Converging through Calculations</h3>
+        <h3>CTMF 2: Praxis Methods for Writing</h3>
+        <p>
+            Praxis I introduced me to writing-for-reading techniques such as Frame With The Claim, deductive
+            arrangement, and Toulmin's structure. [1]<br>As a team we applied these techniques to our written report.
+        </p>
+        <p>
+            Most intentionally, each iteration we included started with a bold centered
+            claim. This was followed by a Toulmin structure arguing why the change was necessary.This helped communicate
+            very efficiently. An example of our framing argument is
+            shown below:
+        </p>
+        <figure>
+            <img src="assets/bridge_write_structure.webp" alt="bridge structure" class="no-border">
+            <figcaption>Figure 4: An example of us utilizing Praxis framing methods in our written report.</figcaption>
+        </figure>
+
+        <h4>Takeaways</h4>
+        <p>
+            After trying the methods we learnt for engineering writing in Praxis, I found them to be very effective for
+            framing arguments and organizing content in a clear, logical way. Since then, I feel I have been using them
+            in my writing more often.
+        </p>
+
+        <h3>CTMF 3: Simulation Prototypes for Converging</h3>
+        <p>
+            Across all seven iterations, calculations were how we converged. As we couldn't use physical prototypes, we
+            used Python scripts to compute factor-of-safety (FOS) profiles, allowing us to determine where the bridge
+            would fail along with the failure mode.
+        </p>
+        <p>
+            Simulations were great for quickly iterating on our design by reinforcing whichever place the simulation
+            told us to. In fact, we were able to finish optimizing the design in just a few days.
+        </p>
+        <p>
+            In the end, our final predicted failure load came out to 1,096 N, and our bridge failed at roughly one-fifth
+            of that. This is because our simulation only took into account the failure modes possibly to calculate given
+            our tools. While to some extent, its clear that our simulation was useful given the mode by which we failed
+            (grafting sheer failure, see Figure below)
+            was not one of which we calculated in the simulation, it is also a painful representation that simulations
+            cannot
+            capture a full picture.
+        </p>
+        <figure>
+            <img src="assets/bridge_fail.webp" alt="Figure 5" class="no-border">
+            <figcaption>Figure 5: A picture of the failure mode of our bridge.</figcaption>
+        </figure>
+
+        <h4>Takeaways</h4>
+        <p>
+            Personally, I've had experience using simulations previously in a physics contest called IYPT where
+            participants build experimental setups and predict results using theory. Simulations to me are a great tool
+            for quickly iterating on a design without having to sacrifice a much larger amount of time and cost to build
+            physical prototypes.
+        </p>
+        <p>
+            However, as the failure of the bridge showed me, it is not possible to rely on only one type of prototype
+            (simulations) to iterate a design. Simulations only work so far as they are coded, and can often miss
+            physical factors.
+        </p>
+
+        <h3>Effect on my Position</h3>
+        <p>
+            All CTMF two and three above share a thread of representing feeding back into the design. Our crude
+            verification
+            showed us issues our simulation missed (too late, and too little). The calculations and simulation let us
+            converge on a design without wasting material. However, due to limitations with how we applied
+            representations outside of our simulation, we were unable to succeed in this project.
+        </p>
+        <p>
+            Before this project, I associated representing primarily with the communication step — the report you
+            write after, or the prototype you show a stakeholder. I now think of it more as an active design tool.
+            The bridge showed me that representing is how you find out what you don't know yet.
+        </p>
+        <p>
+            The report also let me explore writing utilizing engineering communication methods, which changed my
+            position on writing technical reports. I was able to see how helpful a structured approach could be.
+        </p>
 
 
         <h3>References</h3>
@@ -63,7 +195,8 @@
             [1] Lofgreen, J., & Carrick, R. (2026). ESC102 Lecture Slides.
             <br>
             [2] Bentz, E. (2025). CIV102 Bridge Design Project.
-
+            <br>
+            [3] Wang, A., Kim, Y., VK, L. (2025). CIV102 Bridge Design Submission.
         </p>
 
         <img src="assets/cat.webp" alt="cat" class="no-border">
